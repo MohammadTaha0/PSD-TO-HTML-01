@@ -43,12 +43,14 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if (window.pageYOffset >= 1) {
       $("nav").addClass("bg-warning");
+      $("nav ul li a, #click_search").addClass("text-dark");
       $(".logo a").addClass("text-dark");
       $(".bars_ul span").addClass("text-dark");
     } else {
       $("nav").removeClass("bg-warning");
       $(".logo a").removeClass("text-dark");
       $(".bars_ul span").removeClass("text-dark");
+      $("nav ul li a, #click_search").removeClass("text-dark");
     }
   });
   if (
