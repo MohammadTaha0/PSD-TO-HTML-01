@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
 }
-i{
+i {
   cursor: pointer;
 }
 body {
@@ -197,6 +197,9 @@ nav ul li button {
   transition: 0.3s ease-in;
 }
 .btn-warning {
+  background: var(--warning);
+}
+.bg-warning {
   background: var(--warning);
 }
 .text-warning {
