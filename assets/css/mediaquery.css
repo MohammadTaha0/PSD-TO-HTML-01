@@ -1,0 +1,526 @@
+@media screen and (max-width: 1326px) {
+  .statistics_bg {
+    background-size: 100% 650px;
+    height: 651px;
+  }
+}
+@media screen and (max-width: 1146px) {
+  .statistics_bg {
+    width: 95%;
+  }
+  .statistics_bg .statistics_cards {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1178px) {
+  .header_section_relative_cont .inner_cont h4 {
+    font-size: 75px;
+  }
+  .header_section_relative_cont .inner_cont p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1146px) {
+  .statistics_bg {
+    width: 95%;
+  }
+  .statistics_bg .statistics_cards .card {
+    width: 150px;
+    height: 150px;
+  }
+  .statistics_bg .statistics_cards .card h5 {
+    font-size: 40px;
+  }
+  .statistics_bg .statistics_cards .card p {
+    font-size: 20px;
+  }
+  .taste {
+    background-position: 0px -20px;
+    margin: 0px;
+    background-size: 100% 800px;
+    height: auto;
+    padding: 50px 0px;
+  }
+  .taste_2 {
+    background-position: 0px -350px;
+    background-size: 110% 860px;
+    height: 861px;
+  }
+  .taste .taste_cont .taste_img,
+  .taste .taste_cont .taste_img_2 {
+    width: 40%;
+  }
+  .taste .taste_cont .taste_card .taste_title p {
+    font-size: 12px;
+  }
+  .taste .taste_cont .taste_card .taste_title h3 {
+    font-size: 60px;
+  }
+  .footer footer .link_cont li a {
+    font-size: 13px;
+  }
+  .footer footer .link_cont h4 {
+    font-size: 15px;
+  }
+  .footer footer .main_cont .h5 {
+    font-size: 25px;
+  }
+  .footer footer .main_cont p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 836px) {
+  .search .inp_cont {
+    margin: 20px auto;
+  }
+  .search .inp_cont .related {
+    width: 650px;
+  }
+  .search .inp_cont input {
+    width: 575px;
+  }
+}
+@media screen and (max-width: 778px) {
+  .statistics_bg {
+    width: 90%;
+  }
+  .statistics_bg .statistics_cards .card {
+    width: 120px;
+    height: 120px;
+  }
+  .statistics_bg .statistics_cards .card h5 {
+    font-size: 30px;
+  }
+  .statistics_bg .statistics_cards .card p {
+    font-size: 15px;
+  }
+  .statistics_bg {
+    background-size: 100% 600px;
+    height: 601px;
+  }
+  .footer {
+    height: auto;
+  }
+  .footer footer {
+    height: 100%;
+    justify-content: center;
+  }
+  .footer footer .main_cont {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+  }
+  .footer footer .main_cont .h5 {
+    font-size: 35px;
+  }
+  .footer footer .main_cont p {
+    text-align: center;
+  }
+  .footer footer .link_cont {
+    width: auto;
+    padding: 0px 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    padding: 10px 0px;
+    top: 100%;
+    background-color: var(--warning);
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0px 0px;
+    height: auto;
+    padding: 10px 0px;
+  }
+  nav ul li button {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+  }
+  nav ul li a {
+    color: black;
+    font-weight: 600;
+  }
+  nav .bars_ul {
+    display: block;
+    width: auto;
+    padding: 0px 40px;
+    font-size: 22px;
+  }
+  nav .bars_ul span {
+    cursor: pointer;
+    color: var(--warning);
+  }
+  .bg-warning {
+    background-color: var(--warning);
+  }
+  .text-dark {
+    color: black !important;
+  }
+  .header_section {
+    height: 70vh;
+  }
+  .header_section_relative_cont {
+    height: 70vh;
+  }
+  .header_section_relative_cont .inner_cont h4 {
+    font-size: 52px;
+  }
+  .header_section_relative_cont .inner_cont p {
+    font-size: 12px;
+  }
+  .header_section_relative_cont .inner_cont .btn {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  .taste .taste_cont .taste_card .taste_title h3 {
+    font-size: 50px;
+  }
+  .taste {
+    background-size: 100% 750px;
+    height: auto;
+    background-position: 0px -10px;
+    /* padding: 0px 30px; */
+  }
+  .taste_2 {
+    height: auto;
+    background-size: 120% 650px;
+    background-position: 0px -200px;
+  }
+  .taste .taste_cont .taste_card .taste_title h3 {
+    font-size: 40px;
+  }
+  .taste .taste_cont .taste_card .taste_title p {
+    font-size: 10px;
+  }
+  .taste .taste_cont .taste_card .taste_title .btn {
+    font-size: 12px;
+    padding: 5px 20px;
+  }
+  .taste .taste_cont {
+    height: auto;
+    padding: 0px;
+  }
+  .taste .taste_cont .taste_img {
+    width: 45%;
+  }
+  .subscribe .inner_cont {
+    width: 90%;
+  }
+  .subscribe .inner_cont p {
+    font-size: 14px;
+  }
+  .lenora {
+    height: 60vh;
+  }
+  .lenora .txt_cont {
+    width: 90%;
+  }
+  .lenora .txt_cont p {
+    font-size: 14px;
+  }
+  .search .result span {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 693px) {
+  .search .inp_cont .related {
+    width: 452px;
+  }
+  .search .inp_cont input {
+    width: 375px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .statistics_bg {
+    width: 95%;
+  }
+  .statistics_bg .statistics_cards .card {
+    width: 110px;
+    height: 110px;
+  }
+  .statistics_bg .statistics_cards .card h5 {
+    font-size: 26px;
+  }
+  .statistics_bg .statistics_cards .card p {
+    font-size: 15px;
+  }
+  .statistics_bg {
+    background-size: 100% 570px;
+    height: 571px;
+  }
+  .statistics_bg .statistics_head p {
+    font-size: 12px;
+  }
+  .footer footer .main_cont {
+    width: 100%;
+  }
+  .footer footer .main_cont p {
+    width: 90%;
+  }
+  .footer footer .link_cont {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer footer .link_cont li {
+    margin-bottom: 20px;
+  }
+  .footer footer .link_cont h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .footer footer .link_cont li a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .seller .container .seller_cards {
+    justify-content: center;
+    padding: 0px;
+    margin-top: 20px;
+  }
+  .seller .container .seller_cards .seller_card {
+    width: 45% !important;
+    margin: 10px 10px;
+  }
+  .seller .container .head_seller p {
+    font-size: 12px;
+  }
+  .taste .taste_cont .taste_img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 578px) {
+  .header_section {
+    height: 60vh;
+  }
+  .header_section_relative_cont {
+    height: 60vh;
+  }
+  .header_section_relative_cont .inner_cont h4 {
+    font-size: 20px;
+  }
+  .statistics_bg .statistics_cards .card {
+    width: 90px;
+    height: 90px;
+  }
+  .statistics_bg .statistics_cards .card h5 {
+    font-size: 20px;
+  }
+  .statistics_bg .statistics_cards .card p {
+    font-size: 12px;
+  }
+  .statistics_bg {
+    background-size: 100% 530px;
+    height: 531px;
+  }
+  .statistics_bg .statistics_head p {
+    font-size: 12px;
+  }
+  .subscribe .inner_cont h3 {
+    font-size: 60px;
+  }
+  .subscribe .inner_cont .inp_cont input {
+    padding: 0px 30px;
+  }
+  .subscribe .inner_cont .inp_cont input[type="submit"] {
+    width: 30%;
+    padding: 0px 0px;
+    text-align: center;
+  }
+  .lenora {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header_section {
+    background-size: 100% 100%;
+  }
+  .header_section_relative_cont {
+    background-size: 90% 100%;
+  }
+  .header_section_relative_cont .inner_cont {
+    width: 70%;
+  }
+  .header_section_relative_cont .inner_cont h4 {
+    font-size: 48px;
+  }
+  .header_section_relative_cont .inner_cont p {
+    font-size: 10px;
+  }
+  .header_section_relative_cont .inner_cont .btn {
+    font-size: 8px;
+    padding: 3px 14px;
+    margin: 13px 0px;
+  }
+  .seller .container .seller_cards .seller_card {
+    width: 75% !important;
+    margin: 10px 0px;
+  }
+  .seller .container .seller_cards .seller_card .title h6 {
+    font-size: 34px;
+  }
+  .taste .taste_cont {
+    height: auto;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  .taste .taste_cont .taste_card {
+    width: 100%;
+  }
+  .taste_2 .taste_cont .taste_card {
+    margin: 0px;
+    height: auto;
+  }
+  .taste_2 .taste_cont {
+    flex-direction: column-reverse;
+  }
+  .taste .taste_cont .taste_img {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .taste_2 .taste_cont .taste_img {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 0px;
+  }
+  .taste_2 .taste_cont .taste_img img {
+    width: 60%;
+  }
+  .subscribe {
+    height: 50vh;
+  }
+  .subscribe .inner_cont p {
+    font-size: 10px;
+  }
+  .subscribe .inner_cont .inp_cont {
+    padding: 20px 0px;
+  }
+  .search .inp_cont .related {
+    width: 332px;
+  }
+  .search .inp_cont input {
+    width: 275px;
+  }
+  .search .inp_cont button {
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 478px) {
+  .statistics_bg .statistics_cards .card {
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--light);
+  }
+  .statistics_bg .statistics_cards .card h5 {
+    font-size: 18px;
+  }
+  .statistics_bg .statistics_cards .card p {
+    font-size: 10px;
+  }
+  .statistics_bg {
+    background-size: 100% 500px;
+    height: 501px;
+  }
+  .header_section_relative_cont .inner_cont p {
+    width: 90%;
+  }
+  .search .result span {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .statistics_bg .statistics_cards {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .statistics_bg .statistics_cards .card {
+    width: 65px;
+    height: 65px;
+  }
+  .statistics_bg .statistics_cards .card h5 {
+    font-size: 16px;
+  }
+  .statistics_bg .statistics_cards .card p {
+    font-size: 8px;
+  }
+  .statistics_bg {
+    background-size: 100% 480px;
+    height: 481px;
+  }
+  .statistics_bg .statistics_head p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 399px) {
+  .header_section_relative_cont .inner_cont {
+    width: 80%;
+  }
+  .header_section_relative_cont {
+    background-size: 100% 100%;
+  }
+  .seller .container .head_seller p {
+    font-size: 10px;
+  }
+  .taste .taste_cont .taste_img {
+    width: 70%;
+  }
+  .taste_2 .taste_cont .taste_img {
+    width: 100%;
+  }
+  .taste_2 .taste_cont .taste_img img {
+    width: 70%;
+  }
+  .statistics_bg .statistics_cards {
+    width: 100%;
+  }
+  .statistics_bg .statistics_cards .card {
+    width: 65px;
+    height: 65px;
+  }
+  .statistics_bg .statistics_cards .card h5 {
+    font-size: 16px;
+  }
+  .statistics_bg .statistics_cards .card p {
+    font-size: 8px;
+  }
+  .statistics_bg {
+    background-size: 100% 450px;
+    height: 451px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .search .inp_cont .related {
+    width: 242px;
+  }
+  .search .inp_cont input {
+    width: 185px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .statistics_bg .statistics_cards .card {
+    width: 55px;
+    height: 55px;
+  }
+  .statistics_bg .statistics_cards .card h5 {
+    font-size: 13px;
+  }
+  .statistics_bg .statistics_cards .card p {
+    font-size: 6px;
+  }
+  .statistics_bg {
+    background-size: 100% 430px;
+    height: 431px;
+  }
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Jquery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Main CSS FIle -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- mediaquery css file -->
+    <link rel="stylesheet" href="./assets/css/mediaquery.css" />
+    <!-- Font Awesome CSS Link -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css"
+    />
+  </head>
+  <body>
+    <section class="search">
+      <span id="close_search"><i class="fa-solid fa-times"></i></span>
+      <div class="inp_cont">
+        <input type="text" placeholder="Search Here....">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="related">
+          <h4>related searches</h4>
+          <li id="first"></li>
+          <li>Best seller</li>
+          <li>Top Dishes</li>
+        </div>
+      </div>
+      <div class="result">
+        <span>Search for : <span id="search_for"></span></span>
+      </div>
+    </section>
+    <section class="header_section" id="home">
+      <nav>
+        <div class="logo">
+          <a href=""><i class="fa-thin fa-utensils"></i> Res </a>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#promo">Promo</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="click_search"><i class="fa-light fa-magnifying-glass"></i></button>
+          </li>
+        </ul>
+        <div class="bars_ul">
+          <span> <i class="fa-light fa-bars"></i> </span>
+        </div>
+      </nav>
+      <div class="header_section_relative_cont">
+        <div class="inner_cont">
+          <h4 class="text-warning">Title here</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
+            molestiae odit, aliquid optio consequuntur animi? Velit, qui
+            consectetur. Saepe, ipsam.
+          </p>
+          <button class="btn btn-warning shadow">order now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="seller" id="products">
+      <div class="container">
+        <div class="head_seller">
+          <h4>best seller</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio
+            veniam dolorum amet, iusto culpa non perspiciatis vero dolore!
+            Dolorum architecto vel quod repudiandae fuga.
+          </p>
+        </div>
+        <div class="seller_cards">
+          <div class="seller_card">
+            <div class="img_box">
+              <img src="./assets/img/sel1.png" alt="" />
+            </div>
+            <div class="title">
+              <h6>title here</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
+                optio eaque recusandae.
+              </p>
+            </div>
+          </div>
+          <div class="seller_card">
+            <div class="img_box">
+              <img src="./assets/img/sel2.png" alt="" />
+            </div>
+            <div class="title">
+              <h6>title here</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
+                optio eaque recusandae.
+              </p>
+            </div>
+          </div>
+          <div class="seller_card">
+            <div class="img_box">
+              <img src="./assets/img/sel3.png" alt="" />
+            </div>
+            <div class="title">
+              <h6>title here</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
+                optio eaque recusandae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="taste" id="promo">
+      <div class="taste_cont">
+        <div class="taste_img">
+          <img src="./assets/img/taste.png" alt="" />
+        </div>
+        <div class="taste_card">
+          <div class="taste_title">
+            <h3>oriental taste</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              veniam praesentium? Consequuntur harum minima perferendis odio
+              ratione nulla optio saepe.
+            </p>
+            <button class="btn btn-warning shadow">order now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics" id="about">
+      <div class="statistics_bg">
+        <div class="statistics_head">
+          <h3 class="text-warning">statistics</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            consequatur ullam cumque nemo asperiores dolores facere vel optio
+            omnis iste.
+          </p>
+        </div>
+        <div class="statistics_cards">
+          <div class="card">
+            <h5>123</h5>
+            <p>outlets</p>
+          </div>
+          <div class="card">
+            <h5>100</h5>
+            <p>chefs</p>
+          </div>
+          <div class="card">
+            <h5>300</h5>
+            <p>menu</p>
+          </div>
+          <div class="card">
+            <h5>30</h5>
+            <p>country</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="taste taste_2">
+      <div class="taste_cont">
+        <div class="taste_img taste_img_2">
+          <img src="./assets/img/grill.png" alt="" />
+        </div>
+        <div class="taste_card">
+          <div class="taste_title">
+            <h3>chicken grill</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              veniam praesentium? Consequuntur harum minima perferendis odio
+              ratione nulla optio saepe.
+            </p>
+            <button class="btn btn-warning shadow">order now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lenora">
+      <div class="txt_cont">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aut
+          cum est debitis, saepe voluptas officiis inventore tempore omnis eum
+          quaerat eos minima architecto error.
+        </p>
+        <h4>lenora fields</h4>
+      </div>
+    </section>
+
+    <section class="subscribe" id="contact">
+      <div class="inner_cont">
+        <h3>subscribe</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ipsam
+          nihil dolore consequatur distinctio minus a, cupiditate aperiam
+          assumenda sequi veritatis, ipsa nulla iure omnis!
+        </p>
+        <div class="inp_cont">
+          <input type="text" placeholder="your email" /><input
+            type="submit"
+            value="subscribe"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <footer>
+        <div class="main_cont">
+          <a class="h5" href="./index.html">res</a>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
+            nulla similique sed at non aliquam cumque ut suscipit nesciunt in
+            fuga, quas eius doloremque illum.
+          </p>
+          <div class="icons">
+            <a href=""><span><i class="fa-brands fa-instagram"></i></span></a>
+            <a href=""><span><i class="fa-brands fa-facebook-f"></i></span></a>
+            <a href=""><span><i class="fa-brands fa-twitter"></i></span></a>
+            <a href=""><span><i class="fa-brands fa-whatsapp"></i></span></a>
+          </div>
+        </div>
+        <div class="link_cont">
+          <h4>about</h4>
+          <li><a href="#">history</a></li>
+          <li><a href="#">our team</a></li>
+          <li><a href="#">brand guidelines</a></li>
+          <li><a href="#">terms&conditions</a></li>
+          <li><a href="#">privacy policy</a></li>
+        </div>
+        <div class="link_cont">
+          <h4>services</h4>
+          <li><a href="#">how to order</a></li>
+          <li><a href="#">our products</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">promo</a></li>
+          <li><a href="#">payment methods</a></li>
+        </div>
+        <div class="link_cont">
+          <h4>other</h4>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">help</a></li>
+          <li><a href="#">privacy</a></li>
+        </div>
+      </footer>
+    </section>
+  </body>
+  <!-- Main JS File -->
+  <script src="./assets/js/app.js"></script>
+</html>

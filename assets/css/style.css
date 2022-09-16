@@ -1,0 +1,636 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --light: #ffffff;
+  --warning: #ffc200;
+  --actwar: #facb30;
+  --hoverwar: #fed343;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+i{
+  cursor: pointer;
+}
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+}
+.search {
+  display: none;
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--warning);
+}
+.search .inp_cont {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.search .inp_cont .related {
+  width: 775px;
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 20px 20px;
+  background-color: #fed343;
+  border-radius: 0px 0px 20px 20px;
+  border: 2px solid #d4d4d4;
+  border-top: none;
+}
+.search .inp_cont .related h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.search .inp_cont .related li {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.search .inp_cont .related li:hover {
+  background-color: #facb30;
+}
+.search .inp_cont input {
+  width: 700px;
+  padding: 0px 20px;
+  font-size: 17px;
+  height: 40px;
+  background: var(--light);
+  border: 2px solid #d4d4d4;
+  border-right: none;
+  color: black;
+  border-radius: 20px 0px 0px 20px;
+}
+.search .inp_cont input::placeholder {
+  color: #303030;
+}
+.search .inp_cont input:focus {
+  outline: none;
+}
+.search .inp_cont button {
+  border: none;
+  height: 40px;
+  background-color: var(--light);
+  padding: 0px 30px;
+  border: 2px solid #d4d4d4;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+.search .inp_cont button:hover {
+  background-color: #f1f1f1;
+}
+.search .inp_cont button:active {
+  background-color: var(--actwar);
+}
+.search .result {
+  display: none;
+  width: 95%;
+  text-align: center;
+  margin: auto;
+  background-color: var(--hoverwar);
+  padding: 30px 0px;
+}
+.search .result span {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: "Grand Hotel", cursive;
+  font-size: 90px;
+}
+#close_search {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light);
+  color: black;
+  border-radius: 50%;
+  opacity: 0.7;
+  transform: 0.5s;
+  cursor: pointer;
+}
+#close_search:hover {
+  opacity: 1;
+}
+.header_section {
+  width: 100;
+  height: 100vh;
+  background: url("../img/bg2.png") no-repeat;
+  background-size: 45% 100%;
+  background-position: 0%;
+  color: var(--light);
+  position: relative;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 999999;
+}
+nav .logo {
+  width: auto;
+  padding: 0px 40px;
+  font-size: 35px;
+}
+nav .logo a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--light);
+}
+nav ul {
+  display: flex;
+  width: auto;
+  padding: 0px 30px;
+  color: var(--warning);
+  align-items: center;
+  list-style-type: none;
+}
+nav ul li {
+  margin: 0px 10px;
+}
+nav ul li a {
+  color: var(--light);
+  text-decoration: none;
+}
+nav ul li button {
+  width: auto;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: white;
+  margin-left: 35px;
+}
+.btn {
+  width: auto;
+  border: 1px solid transparent;
+  padding: 10px 30px;
+  margin: 30px 0px;
+  outline: none;
+  background: transparent;
+  border-radius: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.btn-warning {
+  background: var(--warning);
+}
+.text-warning {
+  color: var(--warning);
+}
+.text-light {
+  color: var(--light);
+}
+.text-dark {
+  color: black !important;
+}
+.header_section_relative_cont {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  background: url("../img/bg1.png") no-repeat;
+  height: 100vh;
+  background-size: 67% 100%;
+  background-position: 100% 50%;
+}
+.header_section_relative_cont .inner_cont {
+  width: 50%;
+}
+.header_section_relative_cont .inner_cont h4 {
+  font-family: "Grand Hotel", cursive;
+  font-size: 100px;
+  width: 70%;
+  text-transform: capitalize;
+}
+.header_section_relative_cont .inner_cont p {
+  font-size: 18px;
+  text-align: justify;
+  width: 75%;
+}
+.btn-warning:active {
+  background: var(--actwar);
+}
+.btn-warning:hover {
+  background: var(--hoverwar);
+  box-shadow: 0.5px 0.5px 3px 3px rgba(0, 0, 0, 0.315);
+}
+.bars_ul {
+  display: none;
+}
+.shadow {
+  box-shadow: 1px 1px 6px 6px rgba(0, 0, 0, 0.315);
+}
+
+.seller {
+  width: 100%;
+}
+.seller .container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px 0px;
+}
+.seller .container .head_seller {
+  width: 100%;
+  text-align: center;
+}
+.seller .container .head_seller h4 {
+  font-family: "Grand Hotel", cursive;
+  text-transform: capitalize;
+  font-size: 60px;
+  font-weight: 400;
+}
+.seller .container .head_seller p {
+  font-size: 16px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.seller .container .seller_cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0px;
+  flex-wrap: wrap;
+}
+.seller .container .seller_cards .seller_card {
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.seller .container .seller_cards .seller_card .img_box {
+  width: 60%;
+  margin: auto;
+}
+.seller .container .seller_cards .seller_card .img_box img {
+  width: 100%;
+  object-fit: contain;
+}
+.seller .container .seller_cards .seller_card .title {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+.seller .container .seller_cards .seller_card .title h6 {
+  font-family: "Grand Hotel", cursive;
+  font-size: 34px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.seller .container .seller_cards .seller_card .title p {
+  font-size: 12px;
+}
+.taste {
+  width: 100%;
+  background: url("../img/bg3.png") no-repeat;
+  background-position: 0px -10px;
+  height: auto;
+  padding: 40px 0px;
+}
+.taste_2 {
+  background: url("../img/bg5.png") no-repeat;
+  background-size: 110% 860px;
+  background-position: 0px -300px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.taste .taste_cont {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.taste_2 .taste_cont {
+  flex-direction: row-reverse;
+  margin-top: 80px;
+}
+.taste .taste_cont .taste_img,
+.taste .taste_cont .taste_img_2 {
+  width: 35%;
+}
+.taste .taste_cont .taste_img img {
+  width: 100%;
+  object-fit: cover;
+}
+.taste .taste_cont .taste_card {
+  width: 50%;
+  color: var(--light);
+}
+.taste .taste_cont .taste_card .taste_title {
+  width: 90%;
+  margin: auto;
+}
+.taste .taste_cont .taste_card .taste_title h3 {
+  font-family: "Grand Hotel", cursive;
+  color: var(--warning);
+  font-size: 77px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.taste .taste_cont .taste_card .taste_title .btn {
+  padding: 5px 50px;
+}
+.statistics {
+  padding: 0px 0px;
+  width: 100%;
+  background-color: #303030;
+  height: auto;
+  margin: 0px;
+}
+.statistics_bg {
+  width: 88%;
+  margin: 0px auto;
+  background: url("../img/bg4.png");
+  background-size: 100% 94vh;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  height: 95vh;
+  padding: 20px 0px;
+}
+.statistics_bg .statistics_head {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  color: var(--light);
+}
+.statistics_bg .statistics_head h3 {
+  font-family: "Grand Hotel", cursive;
+  font-weight: 500;
+  font-size: 80px;
+  text-transform: capitalize;
+}
+.statistics_bg .statistics_head p {
+  font-size: 15px;
+  width: 75%;
+  margin: auto;
+}
+.statistics_bg .statistics_cards {
+  width: 75%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+  color: var(--light);
+}
+.statistics_bg .statistics_cards .card {
+  width: 180px;
+  height: 180px;
+  border: 3px solid var(--light);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.1px 0.1px 1px 1px var(--light);
+  position: relative;
+  z-index: 9999;
+  overflow: hidden;
+}
+.statistics_bg .statistics_cards .card h5 {
+  color: var(--warning);
+  font-size: 50px;
+  font-weight: 500;
+}
+.statistics_bg .statistics_cards .card p {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.statistics_bg .statistics_cards .card::before {
+  content: "";
+  width: 0%;
+  height: 0%;
+  background-color: var(--warning);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0.1;
+  z-index: -99;
+  transition: 0.5s ease-out;
+}
+.statistics_bg .statistics_cards .card:hover {
+  cursor: pointer;
+}
+.statistics_bg .statistics_cards .card:hover::before {
+  color: black;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+.lenora {
+  width: 100%;
+  background: url("../img/bg6.png") no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  margin: 0px;
+}
+.lenora .txt_cont {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.lenora .txt_cont p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.lenora .txt_cont h4 {
+  font-family: "Grand Hotel", cursive;
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+.subscribe {
+  width: 95%;
+  height: 60vh;
+  background: url("../img/bg4.png") no-repeat;
+  object-fit: cover;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.subscribe .inner_cont {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.subscribe .inner_cont h3 {
+  font-family: "Grand Hotel", cursive;
+  font-size: 80px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.subscribe .inner_cont p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.subscribe .inner_cont .inp_cont {
+  width: 90%;
+  padding: 50px 0px;
+}
+.subscribe .inner_cont .inp_cont input[type="text"] {
+  width: 70%;
+  height: 30px;
+  border: 1px solid transparent;
+  padding-left: 10px;
+  border-right: 0px solid transparent;
+  box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.122);
+  font-size: 14px;
+  transition: 0.5s;
+}
+.subscribe .inner_cont .inp_cont input[type="text"]::placeholder {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.subscribe .inner_cont .inp_cont input[type="text"]:focus {
+  outline: none;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.122);
+}
+.subscribe .inner_cont .inp_cont input[type="submit"] {
+  width: 20%;
+  height: 30px;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.122);
+  background: var(--warning);
+  font-weight: 800;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.footer {
+  width: 100%;
+  height: 500px;
+  background: #303030;
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.footer footer {
+  width: 95%;
+  height: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer footer .main_cont {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer footer .main_cont .h5 {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--light);
+}
+.footer footer .main_cont p {
+  font-size: 16px;
+  padding: 20px 0px;
+  width: 70%;
+}
+.footer footer .main_cont .icons {
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer footer .main_cont .icons a {
+  text-decoration: none;
+  color: #303030;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer footer .main_cont .icons a span {
+  width: 30px;
+  height: 30px;
+  background: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #303030;
+  transition: 0.5s ease-in;
+}
+.footer footer .main_cont .icons a:hover span {
+  background-color: #303030;
+  color: var(--light);
+  border: 1px solid var(--light);
+  font-size: 14px;
+  width: 28px;
+  height: 28px;
+}
+.footer footer .link_cont {
+  width: auto;
+  height: auto;
+  text-transform: capitalize;
+}
+.footer footer .link_cont h4 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.footer footer .link_cont li {
+  list-style-type: none;
+  margin: 10px 0px;
+}
+.footer footer .link_cont li a {
+  text-decoration: none;
+  color: var(--light);
+  font-size: 15px;
+}
