@@ -517,7 +517,7 @@ nav ul li button {
 }
 .subscribe .inner_cont .inp_cont input[type="text"] {
   width: 70%;
-  height: 30px;
+  height: 45px;
   border: 1px solid transparent;
   padding-left: 10px;
   border-right: 0px solid transparent;
@@ -535,7 +535,7 @@ nav ul li button {
 }
 .subscribe .inner_cont .inp_cont input[type="submit"] {
   width: 20%;
-  height: 30px;
+  height: 45px;
   border: 1px solid transparent;
   box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.122);
   background: var(--warning);
