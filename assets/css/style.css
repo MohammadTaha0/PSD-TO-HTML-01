@@ -14,11 +14,13 @@
 i {
   cursor: pointer;
 }
+html{
+  scroll-behavior: smooth !important;
+
+}
 body {
   width: 100%;
   font-family: "Montserrat", sans-serif;
-  transition: 0.5s;
-  scroll-behavior: smooth;
 }
 .search {
   display: none;
@@ -44,7 +46,7 @@ body {
   list-style-type: none;
   padding: 20px 20px;
   background-color: #fed343;
-  border-radius: 0px 0px 20px 20px; 
+  border-radius: 0px 0px 20px 20px;
   border: 2px solid #d4d4d4;
   border-top: none;
 }
@@ -289,10 +291,10 @@ nav ul li button {
   align-items: center;
   padding: 15px 0px;
   border-radius: 15px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0px 0px 4px #3030301e;
 }
-.seller .container .seller_cards .seller_card:hover{
+.seller .container .seller_cards .seller_card:hover {
   /* color: var(--light); */
   box-shadow: 0px 100px 50px #3030306c;
   background-color: var(--warning);
