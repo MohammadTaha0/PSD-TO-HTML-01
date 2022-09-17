@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $(".search .inp_cont input").keyup(function () {
     value = $(this).val();
+    $(".search .result").fadeOut(10);
     if (value == "") {
       $(".related").fadeOut("fast");
       $(this).css({
